@@ -12,5 +12,6 @@ def find_period (L0, L1):
             g = 9.81 # in m/s^2 
             T = 2 * np.pi * np.sqrt(L/g) # in 
             print ("When L = %4.1f m, T = %3.1f s" % (L,T))
-            
+    return (L0, L1)
+
 find_period(2, 10)
