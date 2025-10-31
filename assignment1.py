@@ -12,6 +12,9 @@ def find_period (L0, L1):
             g = 9.81 # in m/s^2 
             T = 2 * np.pi * np.sqrt(L/g) # in 
             print ("When L = %4.1f m, T = %3.1f s" % (L,T))
-    return (L0, L1)
+            
+    T1 = 2 * np.pi * np.sqrt(L0 / g)
+    T2 = 2 * np.pi * np.sqrt(L1 / g) # for pytest checks, got help from chatgpt for this
+    return [T1, T2]
 
 find_period(2, 10)
